@@ -1,0 +1,132 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+
+height:100vh;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+
+/* fundo animado */
+background: linear-gradient(135deg,#1d2671,#c33764, #800080);
+background-size:400% 400%;
+animation:fundo 12s infinite alternate;
+
+color:white;
+}
+
+/* animação do fundo */
+@keyframes fundo{
+
+0%{background-position:left;}
+100%{background-position:right;}
+
+}
+
+.titulo{
+
+margin-bottom:40px;
+font-size:40px;
+letter-spacing:2px;
+
+}
+
+/* container dos cards */
+
+.container{
+
+display:flex;
+gap:30px;
+
+}
+
+/* card estilo vidro */
+
+.card{
+
+width:220px;
+padding:30px;
+border-radius:20px;
+
+background: rgba(255,255,255,0.1);
+
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+
+border:1px solid rgba(255,255,255,0.2);
+
+box-shadow:0 8px 32px rgba(0,0,0,0.3);
+
+transition:0.4s;
+
+cursor:pointer;
+
+}
+
+/* efeito hover */
+
+.card:hover{
+
+transform:translateY(-10px) scale(1.05);
+
+box-shadow:0 15px 40px rgba(0,0,0,0.5);
+
+}
+
+/* título do card */
+
+.card h2{
+
+margin-bottom:10px;
+
+}
+
+/* botão moderno */
+
+.botao{
+
+margin-top:50px;
+padding:15px 40px;
+
+border:none;
+border-radius:30px;
+
+font-size:16px;
+
+background: rgba(255,255,255,0.2);
+
+backdrop-filter: blur(5px);
+
+color:white;
+
+cursor:pointer;
+
+transition:0.3s;
+
+box-shadow:0 8px 20px rgba(0,0,0,0.4);
+
+}
+
+/* hover botão */
+
+.botao:hover{
+
+transform:scale(1.1);
+
+background:rgba(255,255,255,0.35);
+
+}
+
+/* clique botão */
+
+.botao:active{
+
+transform:scale(0.95);
+
+}
